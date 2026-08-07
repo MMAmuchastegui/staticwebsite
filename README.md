@@ -1,142 +1,120 @@
-# GEDING — sitio web estático
+# GEDING
 
-Sitio institucional de GEDING (Automatismos y Control), reconstruido desde
-cero como **sitio 100% estático** — sin WordPress, sin PHP, sin base de
-datos — usando Next.js con exportación estática.
+Sitio web institucional de **GEDING (Automatismos y Control)** desarrollado con **Next.js** y exportado como un sitio completamente estático. El proyecto reemplaza la implementación anterior basada en WordPress por una solución más simple, segura y fácil de mantener.
 
-## Stack
+## Tecnologías
 
-- Next.js 16 (App Router) con `output: "export"`
-- TypeScript + Tailwind CSS v4
-- Fuentes auto-alojadas (`@fontsource`), sin dependencias externas en runtime
+* Next.js 16 (App Router)
+* TypeScript
+* Tailwind CSS v4
+* `output: "export"` para generar archivos estáticos
+* Fuentes locales mediante `@fontsource`
 
-## Desarrollo local
+## Desarrollo
+
+Instalar las dependencias:
 
 ```bash
 npm install
+```
+
+Iniciar el servidor de desarrollo:
+
+```bash
 npm run dev
 ```
 
-Abrí http://localhost:3000
+El sitio estará disponible en:
 
-## Generar la versión estática
+```
+http://localhost:3000
+```
+
+## Build
+
+Para generar la versión de producción:
 
 ```bash
 npm run build
 ```
 
-Esto genera la carpeta `out/` con HTML/CSS/JS puro — **esa es la carpeta
-que se sube a S3**, nada más.
+El resultado se genera en la carpeta `out/`, que contiene los archivos estáticos listos para publicar.
 
-## Deploy a AWS (GitHub → S3 → CloudFront)
+## Despliegue
 
-1. Subí este repo (tal cual, sin `node_modules` ni `out/`, ya excluidos en
-   `.gitignore`) a GitHub.
-2. En tu máquina o en un GitHub Action, corré `npm install && npm run build`.
-3. Subí el **contenido** de `out/` (no la carpeta en sí) a tu bucket de S3.
-4. Poné **CloudFront delante del bucket** (ver sección de seguridad abajo —
-   no actives "Static website hosting" directo en S3, es más inseguro que
-   usar CloudFront con Origin Access Control).
+El sitio está pensado para publicarse en **AWS S3** utilizando **CloudFront** como CDN.
 
-## Seguridad (importante para un sitio público en S3)
+Flujo recomendado:
 
-Como el sitio es 100% estático (sin PHP, sin base de datos, sin backend),
-ya eliminamos de raíz toda la superficie de ataque típica de WordPress
-(inyección SQL, plugins vulnerables, fuerza bruta al `/wp-login.php`,
-ejecución remota de código, etc.). Lo que queda por asegurar es la
-**infraestructura de AWS** en sí:
+1. Clonar el repositorio.
+2. Instalar dependencias.
+3. Ejecutar `npm run build`.
+4. Subir el contenido de `out/` al bucket de S3.
+5. Invalidar la caché de CloudFront si corresponde.
 
-### 1. El bucket de S3 nunca debe ser público directamente
+## Infraestructura
 
-No uses "Static website hosting" con el bucket abierto a internet. En su
-lugar:
+La arquitectura de publicación es la siguiente:
 
-- Dejá **todas** las opciones de "Block Public Access" activadas (bloqueadas) en el bucket.
-- Poné **CloudFront** delante, usando **Origin Access Control (OAC)** — así
-  el bucket solo le entrega archivos a CloudFront, nunca directo a
-  cualquiera que adivine la URL de S3.
-- Política de bucket de ejemplo (reemplazá `TU-BUCKET` y `TU-ACCOUNT-ID` /
-  `TU-DISTRIBUTION-ID`):
-
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "AllowCloudFrontServicePrincipalReadOnly",
-      "Effect": "Allow",
-      "Principal": { "Service": "cloudfront.amazonaws.com" },
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::TU-BUCKET/*",
-      "Condition": {
-        "StringEquals": {
-          "AWS:SourceArn": "arn:aws:cloudfront::TU-ACCOUNT-ID:distribution/TU-DISTRIBUTION-ID"
-        }
-      }
-    }
-  ]
-}
+```
+GitHub
+   │
+   ▼
+Build (Next.js)
+   │
+   ▼
+out/
+   │
+   ▼
+Amazon S3
+   │
+   ▼
+CloudFront
+   │
+   ▼
+Dominio
 ```
 
-Con esto, ni siquiera vos con la URL directa de S3 podés listar o escribir
-archivos desde afuera — solo lectura, y solo a través de CloudFront.
+## Consideraciones de seguridad
 
-### 2. Headers de seguridad HTTP (vía CloudFront)
+El sitio no utiliza servidor, PHP ni base de datos, por lo que elimina gran parte de los vectores de ataque habituales de aplicaciones dinámicas.
 
-El sitio ya trae una Content-Security-Policy estricta en el propio HTML
-(`app/layout.tsx`), pero hay headers que **solo se pueden setear a nivel
-HTTP**, no en una etiqueta `<meta>` del HTML: `Strict-Transport-Security`,
-`X-Frame-Options`, `X-Content-Type-Options`.
+Para la infraestructura de AWS se recomienda:
 
-En CloudFront: Distribución → Behaviors → editá el behavior → **Response
-headers policy** → elegí la policy administrada por AWS llamada
-**`Managed-SecurityHeadersPolicy`**. Sin escribir nada, te agrega HSTS,
-X-Content-Type-Options, X-Frame-Options, X-XSS-Protection y
-Referrer-Policy a cada respuesta.
+* Mantener el bucket de S3 privado.
+* Acceder al bucket únicamente mediante **CloudFront** usando **Origin Access Control (OAC)**.
+* Habilitar HTTPS mediante AWS Certificate Manager.
+* Configurar la política administrada **Managed-SecurityHeadersPolicy** de CloudFront.
+* Redireccionar todas las peticiones HTTP hacia HTTPS.
 
-### 3. HTTPS obligatorio
+## Estructura del proyecto
 
-En el mismo behavior de CloudFront, poné **"Redirect HTTP to HTTPS"**, y
-usá un certificado de AWS Certificate Manager (gratis) para tu dominio.
+```
+app/                          Páginas (App Router)
+components/
+├── home/                     Componentes de la página principal
+├── layout/                   Header, Footer
+├── nuestro-trabajo/          Explorador de proyectos
+└── ui/                       Componentes reutilizables
 
-### 4. Opcional pero recomendado: AWS WAF
+lib/
+└── data/                     Datos del sitio y proyectos
 
-Si más adelante te preocupa tráfico malicioso o bots, podés asociar un Web
-ACL de AWS WAF a la distribución de CloudFront (tiene un tier gratuito
-limitado, y reglas administradas gratuitas contra los ataques más
-comunes). No es imprescindible para un sitio institucional sin backend,
-pero es la capa extra si alguna vez la necesitás.
+public/
+├── images/                   Recursos estáticos
+└── robots.txt
+```
 
-### En resumen
+## Contenido
 
-| Riesgo típico de WordPress | En este sitio |
-|---|---|
-| Plugin vulnerable | No existe — no hay plugins |
-| Inyección SQL | No existe — no hay base de datos |
-| Fuerza bruta a `/wp-login` | No existe — no hay panel de login |
-| Ejecución remota de código PHP | No existe — no hay PHP corriendo |
-| Bucket S3 mal configurado | Mitigado con Block Public Access + OAC |
-| Falta de HTTPS | Mitigado con CloudFront + ACM |
-| Headers HTTP débiles | Mitigado con la Response Headers Policy |
+La información del sitio se encuentra centralizada en `lib/data/`.
 
-
-## Estructura de contenido
-
-- `app/` — páginas (App Router)
-- `components/layout/` — Header, Footer
-- `components/ui/` — piezas chicas reutilizables (BusDivider, StatusDot)
-- `components/home/` — HeroCarousel, ServiceCard (usados en Home y Servicios)
-- `components/nuestro-trabajo/` — el explorador de proyectos (filtros + timeline)
-- `lib/data/site.ts` — textos y datos de servicios, navegación, contacto, clientes
-- `lib/data/projects.ts` + `lib/data/projects-raw.json` — historial de
-  proyectos (91 proyectos, categorizados automáticamente a partir del
-  archivo histórico de la empresa)
-- `public/images/` — logo e imágenes recuperadas del sitio original
-- `public/robots.txt` — indexación para buscadores
+* `site.ts`: navegación, servicios, clientes y datos de contacto.
+* `projects.ts`: estructura de proyectos utilizada por la aplicación.
+* `projects-raw.json`: histórico original de proyectos.
 
 ## Formulario de contacto
 
-Como el sitio es estático, no hay backend para procesar el formulario.
-Actualmente arma un `mailto:` con los datos cargados. Si más adelante
-quieren guardar los mensajes en algún lado, se puede reemplazar por un
-servicio externo (Formspree, Web3Forms, etc.) sin tocar el resto del sitio.
+Al tratarse de un sitio estático, el formulario genera un enlace `mailto:` con la información ingresada.
+
+Si en el futuro se requiere almacenar consultas o integrar un CRM, puede reemplazarse por un servicio externo (por ejemplo Formspree o Web3Forms) sin modificar la estructura general del proyecto.
