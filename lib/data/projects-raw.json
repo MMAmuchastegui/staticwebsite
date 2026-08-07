@@ -1,0 +1,1065 @@
+[
+  {
+    "title": "Sistema BMS Centro de Negocios Bancor Córdoba",
+    "year": "2019",
+    "sortYear": 2019,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS",
+      "Provisión y montaje de Sistema de Control de Accesos, identificación y conteo de personal,",
+      "credencialización, ingresos con tarjeta de proximidad, sistema de molinetes, interfase con Sistema BMS",
+      "Monitoreo y Telecontrol de, CCTV, Incendios, Iluminación, AºAº, bombas, Ascensores",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal."
+    ]
+  },
+  {
+    "title": "Ingeniería de Protecciones AGD, Selectividad Planta General Deheza Córdoba",
+    "year": "2019",
+    "sortYear": 2019,
+    "category": "energia-electrica",
+    "details": [
+      "Servicios de estudio, ingeniería de alimentación en MT, selectividad de protecciones, y estudio Coseno Phi",
+      "Protecciones de nueva línea de Alimentación de la planta y asistencia en planos de celdas.",
+      "Mejoras en el Factor de Potencia de la Instalación."
+    ]
+  },
+  {
+    "title": "Sistema de Control SCADA e Instrumentación Acueducto Los Molinos, Córdoba",
+    "year": "2019",
+    "sortYear": 2019,
+    "category": "saneamiento",
+    "details": [
+      "Provisión y Programación de Sistema SCADA de Supervisión y Control ELIPSE E3",
+      "Provisión y Programación de PLC Altus, HMI",
+      "Provisión, Programación y Puesta en Marcha Tableros para TGBT, Cisternas, Filtros, Casa Química",
+      "Provisión y programación de Instrumentación para Estación de bombeo",
+      "Provisión de Sistemas de CCTV, Incendio e Intrusos.",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Ampliación Sistema SCADA Eléctrico, Planta de Bioethanol PROMIAZ SA Alejandro Roca, Córdoba",
+    "year": "2019",
+    "sortYear": 2019,
+    "category": "industria-oil-gas",
+    "details": [
+      "Ampliación y Programación de Software Elipse E3 Power Upgrade",
+      "Programación de nuevas Protecciones ABB e integración en Sistema SCADA",
+      "Ingeniería, Ensayos con valija de inyección trifásica secundaria, Puesta en Marcha"
+    ]
+  },
+  {
+    "title": "Sistema BMS Edificio Pampa Energía Buenos Aires Segunda Etapa",
+    "year": "2018-2019",
+    "sortYear": 2019,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Monitoreo y Telecontrol de, Sistema eléctrico, Incendios, Iluminación, AºAº, bombas, Ascensores",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal."
+    ]
+  },
+  {
+    "title": "CELSIA Panamá Actualización Sistema SCADA de Central Hidroeléctrica dos mares, en Chiriquí",
+    "year": "2018",
+    "sortYear": 2018,
+    "category": "energia-electrica",
+    "details": [
+      "Actualización de Servidores, Actualización de Licencias",
+      "Ampliación Sistema SCADA",
+      "Integración nuevos sistemas (NOVA, CND-AGC)",
+      "Limpia-rejillas, Automatismo compuertas",
+      "Integración de Sistemas de Medición de Caudales y Nivel",
+      "Automatización compuertas vertederos presa",
+      "Mantenimiento de Estaciones de Operación 2018",
+      "Dictado de Curso E3 Nivel Avanzado"
+    ]
+  },
+  {
+    "title": "Ingeniería, Proyecto eléctrico, de Control, Protecciones, PEM ET Concordia Entre Ríos",
+    "year": "2018",
+    "sortYear": 2018,
+    "category": "energia-electrica",
+    "details": [
+      "Configuración, ajustes y ensayos SEL 421, 387, 451-4 551-C",
+      "Configuración Concentrador RTU SEL353x-SEL2440/2411",
+      "Configuración GPS SEL2407",
+      "Configuración sistema SCADA",
+      "Puesta en Marcha ET"
+    ]
+  },
+  {
+    "title": "Sistema de Control SCADA y Automatización Planta de Tratamiento Líquidos Cloacales Área Metropolitana Gran Resistencia (Chaco)",
+    "year": "2017-2018",
+    "sortYear": 2018,
+    "category": "saneamiento",
+    "details": [
+      "Provisión y Programación de Sistema de Supervisión SCADA y Control ELIPSE E3",
+      "Provisión y Programación de PLC Altus, HMI",
+      "Provisión, Programación y Puesta en Marcha tableros para Bombas Elevadoras",
+      "Sistema de Comunicación Fibra Óptica y Radio enlace",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Ingeniería Sistema de Control SCADA y Automatización Acueducto Los Molinos (Córdoba)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "saneamiento",
+    "details": [
+      "Ingeniería de Sistema de Control y Automatización para la Rehabilitación del Canal Los Molinos, Córdoba."
+    ]
+  },
+  {
+    "title": "Sistema de Control SCADA y Automatización Planta Potabilizadora de Agua Miguel Lanús – Posadas (Misiones)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "saneamiento",
+    "details": [
+      "Provisión y Programación de Sistema SCADA de Supervisión y Control ELIPSE E3",
+      "Provisión y Programación de PLC Altus, HMI",
+      "Provisión, Programación y Puesta en Marcha Tableros para TGBT, Cisternas, Filtros, Casa Química",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Central Térmica 9 de Julio 2x60MVA 132/13.2kV, Mar del Plata (Buenos Aires)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "energia-electrica",
+    "details": [
+      "Programación y Puesta en Marcha del sistema de Protecciones",
+      "Ensayos equipamiento playa 132kV",
+      "Programación RTU – SOTR"
+    ]
+  },
+  {
+    "title": "Servicio de Actualización y Ampliación del Sistema de Monitoreo de los Sistemas de Seguridad CENTRAL NUCLEAR EMBALSE (Córdoba)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión y Programación de Tablero de Control RTU Xtorm Altus. Sistema Redundante",
+      "Provisión de Hardware para Sistema de Control Redundante",
+      "Provisión y Programación de Software Elipse E3 Power para Centro de Control Centralizado Central Nuclear Embalse",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema Control SCADA Planta Tratamiento de Líquidos Cloacales (Santiago del Estero)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "saneamiento",
+    "details": [
+      "Provisión y Programación de Sistema de Supervisión SCADA y Control ELIPSE E3",
+      "Provisión y Programación de PLC Altus, HMI",
+      "Provisión, Programación y Puesta en Marcha tableros para Bombas Elevadoras",
+      "Sistema de Comunicación Fibra Óptica y Radio enlace",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Sistema BMS Edificio Finochietto Gobierno de la Cuidad de Bs As, (C.A.B.A.)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Monitoreo y Telecontrol de Incendios, Iluminación, AºAº, bombas, Ascensores",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Integración de A°A° al Sistema de BMS Edificio Palacio Lezama C.A.B.A. (Buenos Aires)",
+    "year": "2017",
+    "sortYear": 2017,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión, montaje de equipos y programación de Software al sistema de Elipse E3 para la integración de protocolos de Aire Acondicionado al Sistema de BMS",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema BMS Edificio Corporativo Banco de Córdoba, BANCOR (Córdoba)",
+    "year": "2016-2017",
+    "sortYear": 2017,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Provisión y montaje de Sistema de Control de Accesos, identificación y conteo de personal, credencialización, ingresos con tarjeta de proximidad, sistema de molinetes, barreras vehiculares, interfase con Sistema BMS",
+      "Monitoreo y Telecontrol de, CCTV, Incendios, Iluminación, AºAº, bombas, Ascensores",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal",
+      "Ingeniería Sistema de Control y Automatización para Abastecimiento de Agua Potable (Misiones – 2016)",
+      "Ingeniería de Sistema  de  Control  y Automatización  para  la  Construcción  del  Plan Maestro de Abastecimiento de Agua Potable para las ciudades de Posadas y Garupá (Misiones)"
+    ]
+  },
+  {
+    "title": "SCADA para Sistema de Protección y Control PLANTA BUNGE Campana (Buenos Aires)",
+    "year": "2016-2017",
+    "sortYear": 2017,
+    "category": "industria-oil-gas",
+    "details": [
+      "Provisión y Programación de Software Elipse E3 Power",
+      "Programación de Protecciones ABB y Puesta en Marcha de T.",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "BMS CENTRO CIVICO DEL BICENTENARIO, Mantenimiento Preventivo, Gobierno de Córdoba (Córdoba)",
+    "year": "2015-2016-2017",
+    "sortYear": 2017,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Mantenimiento Preventivo BMS, visitas programadas mensuales, atención telefónica horario de 8 a 17 de lunes a viernes, comunicación por emergencia 24x7"
+    ]
+  },
+  {
+    "title": "Sistema Control OPDAS CENTRAL NUCLEAR EMBALSE (Córdoba)",
+    "year": "2013 al 2017",
+    "sortYear": 2017,
+    "category": "energia-electrica",
+    "details": [
+      "Actualización del Software de Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión de repuestos y acondicionamiento de tableros de control, programación y Puesta en Marcha",
+      "Provisión y Programación de Tablero de Control RTU Xtorm y Hadron Altus",
+      "Provisión y Programación de Software Elipse E3 Power para Centro de Control Centralizado Central Nuclear Embalse",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "CELSIA Panamá Actualización Sistema SCADA de Central Hidroeléctrica dos mares, en Chiriquí",
+    "year": "2016",
+    "sortYear": 2016,
+    "category": "energia-electrica",
+    "details": [
+      "Actualización de Servidores, Actualización de Licencias",
+      "Servidor E3 Server Servicios de migración, instalación, ajustes y configuración del sistema",
+      "Mantenimiento de Estaciones de Operación",
+      "Normalizar Redes y Cableado Estructurado",
+      "Configuración de Seguridad de Switchs",
+      "Normalización de sistema de transmisión actual",
+      "Implementación sistema de comunicación con CND, pantallas, eventos, alarmas y registros",
+      "Dictado de Curso E3 Nivel 2"
+    ]
+  },
+  {
+    "title": "BMS CENTRO CIVICO DEL BICENTENARIO, Integración Sistema de Incendio, Gobierno de Córdoba (Córdoba)",
+    "year": "2016",
+    "sortYear": 2016,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Integración al Sistema existente"
+    ]
+  },
+  {
+    "title": "Sistema BMS Edificio Maipu 1 PETROBRAS ARGENTINA S.A. C.A.B.A. (Buenos Aires)",
+    "year": "2016",
+    "sortYear": 2016,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Monitoreo y Telecontrol de, Sistema eléctrico, Incendios, Iluminación, AºAº, bombas, Ascensores",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema BMS Edificio Palacio Lezama C.A.B.A. (Buenos Aires)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Monitoreo y Telecontrol de, Control de Accesos, CCTV, Incendios, Iluminación, AºAº, bombas",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Protecciones SET SIDERAR San Nicolás",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "energia-electrica",
+    "details": [
+      "Programación, calibración, ajustes y puesta en marcha de Protecciones ABB, GE para la planta de Siderar, San Nicolás Provincia de Buenos Aires."
+    ]
+  },
+  {
+    "title": "Sistema de Supervisión y Control Gasoducto del Norte REMSA (Salta)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "industria-oil-gas",
+    "details": [
+      "Sistema de SCADA Elipse E3 para supervisión y control de 18 puntos del sistema, distribuidos en toda la provincia de Salta,",
+      "7 tableros de Control de para puestos de Medición",
+      "11 tableros de Control de Válvulas",
+      "Ingeniería, Puesta en Marcha y capacitación del personal"
+    ]
+  },
+  {
+    "title": "Actualización Sistema de Supervisión y Control Edificio AFIP Paseo Colón, Hipólito Yrigoyen (Buenos Aires)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Actualización del Software de Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión de repuestos y acondicionamiento de tableros de control, programación y Puesta en Marcha"
+    ]
+  },
+  {
+    "title": "SET Puerto Mineral Ensayos y Puesta en Marcha (Misiones)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "energia-electrica",
+    "details": [
+      "Ingeniería, Ajustes, Ensayos y Puesta en Marcha E T"
+    ]
+  },
+  {
+    "title": "Actualización Tecnológica Sistema de Control Eléctrico, Aire Acondicionado Edificio AFIP PASEO COLON (Buenos Aires)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y Programación de Software Elipse E3 para Centro de Control Centralizado Edificio Afip Paseo Colón.",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "RTU Adecuación de SET Subterráneo para Telecomendo ENERSA (Entre Ríos)",
+    "year": "2015",
+    "sortYear": 2015,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión y Programación de tres tableros de Telecomando,",
+      "Ingeniería, Ensayos, Puesta en Marcha, integración con el Centro Operativo de Distribución."
+    ]
+  },
+  {
+    "title": "Planta de Bioethanol PROMIAZ SA Alejandro Roca (Córdoba)",
+    "year": "2014- 2015",
+    "sortYear": 2015,
+    "category": "industria-oil-gas",
+    "details": [
+      "Provisión y Programación de Software Elipse E3 Power",
+      "Programación de Protecciones ABB y Puesta en Marcha de T.",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Capacitación y Diagnostico Sistema SCADA Elipse E3 Central Hidroeléctrica Dos Mares, Chiriqui (Panamá)",
+    "year": "2014",
+    "sortYear": 2014,
+    "category": "energia-electrica",
+    "details": [
+      "Diagnóstico del sistema SCADA E3 en Hidroeléctrica",
+      "Elaboración de Plan de Actualización y Puesta a Punto de Sistema Existente",
+      "Capacitación de Elipse E3 básico y Avanzado del Personal de la hidroeléctrica"
+    ]
+  },
+  {
+    "title": "Sistema de Supervisión y Control Edificio ADUANA AFIP (Buenos Aires)",
+    "year": "2014",
+    "sortYear": 2014,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión Sistema de Supervisión y Control",
+      "Software ELIPSE E3",
+      "Provisión de PLC Altus",
+      "Provisión, Programación y Puesta en Marcha",
+      "Ingeniería, Ensayos y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema DE CCTV Edificio Corporativo Electroingeniería SA PEA (Córdoba)",
+    "year": "2014",
+    "sortYear": 2014,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Sistema de intrusos, cámaras de seguridad, sensores de",
+      "Integración al Sistema BMS Elipse",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Protecciones SET Campamento Yacimiento EL TRAPIAL CHEVRON (Neuquén)",
+    "year": "2014",
+    "sortYear": 2014,
+    "category": "industria-oil-gas",
+    "details": [
+      "Programación, calibración, ajustes y puesta en marcha de Protecciones ABB línea RE670 Yacimiento El Trapial Neuquén"
+    ]
+  },
+  {
+    "title": "Sistema de Control Eléctrico COOP RIO TERCERO (Córdoba)",
+    "year": "2014",
+    "sortYear": 2014,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión y Programación de Software Elipse E3 Power para Centro de Control Centralizado Ciudad de rio Tercero",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Control, Yacimiento El Trapial CHEVRON San Jorge (Neuquén)",
+    "year": "2003-2005-2014",
+    "sortYear": 2014,
+    "category": "industria-oil-gas",
+    "details": [
+      "Ampliación Sistema de SCADA Software Elipse E3 SET Campamento El Trapial",
+      "Ingeniería, Programación, Puesta en Marcha",
+      "Integración al sistema de equipo Relay Diferencial de línea GE L90"
+    ]
+  },
+  {
+    "title": "BMS Edificio Corporativo Electroingeniería SA Parque Empresarial Aeropuerto (Córdoba)",
+    "year": "2011-2013",
+    "sortYear": 2013,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y montaje de Tableros de Control de Piso",
+      "Provisión y montaje de Sistema de Control de Accesos, identificación y conteo de personal, credencialización, ingresos con tarjeta de proximidad, sistema de molinetes, barreras vehiculares, interfase con Sistema BMS",
+      "Provisión y Programación de Software Elipse E3 para BMS",
+      "Monitoreo y Telecontrol de Control de Accesos, CCTV, Incendios, Iluminación, AºAº.",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "E.T 132 kV General Deheza (Córdoba)",
+    "year": "2013",
+    "sortYear": 2013,
+    "category": "energia-electrica",
+    "details": [
+      "Inspección, Ensayos y Puesta en Marcha de T, 132KV",
+      "Verificación de Conforme a Obra"
+    ]
+  },
+  {
+    "title": "Central Térmica Barragan, Sistema de Automatismos y HMI (Buenos Aires)",
+    "year": "2012-2013",
+    "sortYear": 2013,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión, Programación de PLC Altus para Almacenamiento de Destilado, PLC para Carga y Descarga Destilados, PLC para Almacenamiento de Agua Cruda, PLC para Tableros de Servicios",
+      "Provisión y Programación de HMI",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "BMS CENTRO CIVICO DEL BICENTENARIO, Gobierno de Córdoba (Córdoba)",
+    "year": "2011",
+    "sortYear": 2011,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión y Programación de PLC para Tableros Seccionales y TGBT",
+      "Provisión y Programación de Software Elipse E3 para BMS, Hardware, Servidores, y PC para Centro de Control",
+      "Monitoreo y Telecontrol de, Control de Accesos, CCTV, Incendios, Iluminación, AºAº.",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Nueva Terminal de Ómnibus Córdoba RTU para Celda 13,2kV EPEC (Córdoba)",
+    "year": "2011",
+    "sortYear": 2011,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión de RTU Altus Hadron , 64ED, 32SD",
+      "Protocolo de Comunicación DNP 3,0",
+      "Comunicación Fibra Óptica con Centro de Control Provincial EPEC",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Centro Cívico del Bicentenario RTU para Celda 13,2kV EPEC (Córdoba)",
+    "year": "2011",
+    "sortYear": 2011,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Provisión de RTU Altus Hadron , 64ED, 32SD",
+      "Protocolo de Comunicación DNP 3,0",
+      "Comunicación Fibra Óptica con Centro de Control Provincial EPEC",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Telecontrol Nueva E.T. 132kV General Deheza, Coop. Gral. Deheza (Córdoba)",
+    "year": "2011",
+    "sortYear": 2011,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión de RTU Altus Hadron , 192ED, 32SD, 8EA",
+      "Provisión e implementación SCADA",
+      "Integración protecciones ABB, Medidores SACI, EMA,",
+      "Protocolo de Comunicación DNP 3,0",
+      "Comunicación Fibra Óptica con Centro de Control Provincial EPEC",
+      "Ingeniería, Ensayos, Capacitación y Puesta en Marcha"
+    ]
+  },
+  {
+    "title": "E.T. CENTRO 33kV/13,2kV, Sistema de Protecciones y Sistema de Control SCADA (Catamarca)",
+    "year": "2011",
+    "sortYear": 2011,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión y Programación de Software SCADA Elipse E3 para Sistema de Supervisión y Control",
+      "Provisión y Programación de HMI, PLC",
+      "Provisión y Programación de Protecciones SEL",
+      "Sistema de Comunicación Edecat-Transnoa",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "E.T. 132kV/13,2kV Villa Carlos Paz Sur, RTU para Telecontrol, EPEC (Córdoba)",
+    "year": "2010",
+    "sortYear": 2010,
+    "category": "energia-electrica",
+    "details": [
+      "O.T.R. – Provisión y Programación de RTU Altus Hadron",
+      "Ingeniería, Ensayos y Puesta en Marcha",
+      "Comunicación DNP3.0 Slave, Modbus RTU",
+      "Provisión y Programación de GPS Reason 420",
+      "Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Monitoreo y Control COD ENERSA (Entre Ríos)",
+    "year": "2010",
+    "sortYear": 2010,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión Sistema SCADA para Centro de Operación y Distribución Provincial ENERSA",
+      "Sistema de Control SCADA Elipse E3",
+      "Integración de Reconectares, llaves motorizadas, RTU de",
+      "Integración con SIG y SCADA de Transmisión.",
+      "Ajustes, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "T.T. 2kV/33kV/13,2kV Paraná Sur, Sistema de Control SEL ENERSA (Entre Ríos)",
+    "year": "2010",
+    "sortYear": 2010,
+    "category": "energia-electrica",
+    "details": [
+      "Implementación Sistema de Control y Protección de Protecciones",
+      "Sistema de Control para HMI con SCADA Elipse E3",
+      "Configuración concentradores y protecciones SEL 421, 387, 451-4, 551-C, 2032, 3332",
+      "Comunicación con Sistema SPIDER",
+      "Ajustes, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "E.T. 132kV/66kV/13,2kV Brinkmann RTU Telecontrol EPEC (Córdoba)",
+    "year": "2010",
+    "sortYear": 2010,
+    "category": "energia-electrica",
+    "details": [
+      "O.T.R. Provisión y Programación de RTU Altus Hadron, 32ED, 64SD, 16EA",
+      "Ingeniería, Ensayos y Puesta en Marcha",
+      "Comunicación DNP3.0 Slave, Modbus RTU",
+      "Provisión y Programación de GPS Reason 420",
+      "Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Supervisión y Control Acueducto Sierras Chicas La Calera (Córdoba)",
+    "year": "2009-2010",
+    "sortYear": 2010,
+    "category": "saneamiento",
+    "details": [
+      "Año 2009-2010",
+      "Provisión Sistema de Supervisión y Control",
+      "Software SCADA ELIPSE E3",
+      "Provisión de PLC Altus, HMI Beijer",
+      "Provisión, Programación y Puesta en Marcha, Tableros para TGBT, Cisternas, Filtros, Casa Química",
+      "Ingeniería, Ensayos y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Sistema de Control Planta Tratamiento de Agua La Calera D.I.P.A.S. (Córdoba)",
+    "year": "2009-2010",
+    "sortYear": 2010,
+    "category": "saneamiento",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión de PLC Altus, HMI Beijer",
+      "Provisión, Programación y Puesta en Marcha Tableros para TGBT, Cisternas, Filtros, Casa Química",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Central Térmica Concepción del Uruguay, RTU Emgasud SA (Entre Ríos)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión de RTU Altus Hadron, 64ED, 32SD, 24EA",
+      "Protocolo de Comunicación DNP 3,0 y RP570",
+      "O.T.R.",
+      "Comunicación con Sistema Provincial SPIDER",
+      "Ingeniería, Ensayos y Puesta en Marcha",
+      "Comunicación por Fibra Óptica",
+      "Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Central Térmica Las Armas, RTU Emgasud SA (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión de RTU Altus Hadron, 64ED, 32SD, 24EA",
+      "O.T.R.",
+      "Ingeniería, Ensayos y Puesta en Marcha",
+      "Comunicación por Fibra Óptica",
+      "Capacitación de personal"
+    ]
+  },
+  {
+    "title": "Central Térmica Paraná, RTU Emgasud SA (Entre Ríos)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión de RTU Altus Hadron, 64ED, 32SD, 24EA",
+      "O.T.R.",
+      "Ingeniería, Ensayos y Puesta en Marcha",
+      "Comunicación por Fibra Óptica",
+      "Capacitación de personal"
+    ]
+  },
+  {
+    "title": "E.T. 66kV/13,2kV FIAT Argentina, Sistema de Control (Córdoba)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión RTU Hadron Altus, GPS Reason",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Central Generación 4,5MVA José M. Alladio e Hijos SA, Sistema de Control SCADA (Córdoba)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "energia-electrica",
+    "details": [
+      "Sistema de Supervisión y Control SCADA ELIPSE E3 para Generadores 1,5 MBA",
+      "Provisión, Programación y Puesta en Marcha PLC ALTUS, HMI Beijer",
+      "Ingeniería, Ensayos, Puesta en Marcha y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Sistema Control Planta Tratamiento de Líquidos Cloacales (Carlos Paz, Córdoba)",
+    "year": "2008-2009",
+    "sortYear": 2009,
+    "category": "saneamiento",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión de PLC Altus, HMI Beijer",
+      "Provisión, Programación y Puesta en Marcha tableros para Bombas Elevadoras",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Ampliación Sistema Supervisión y Control SCADA AFIP HY (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ampliación del Sistema de SCADA",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT Hospital Piñeiro (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería de planos de Tablero TGBT",
+      "Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Tornu (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT",
+      "AFIP Ampliación Sistema de Control Edificio Paseo Colón (Buenos Aires) 2005",
+      "Ampliación Sistema de Supervisión y Control SCADA Elipse E3 para Tablero de Transferencia de Alumbrado (TTA)",
+      "Ingeniería y Programación de Ampliación del Sistema",
+      "Ensayos, Puesta en Marcha",
+      "MWM Internacional Motores SA (Córdoba) 2006",
+      "Programación y puesta a punto de PLC Altus para Maquina NEW ALL fresadora para fabricación de árboles de leva camioneta Ford"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Fernández (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Pirovano (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Ramos Mejías (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Álvarez (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT"
+    ]
+  },
+  {
+    "title": "Automatización Tablero TGBT, Hospital Curie (Buenos Aires)",
+    "year": "2009",
+    "sortYear": 2009,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ingeniería, Provisión, Programación, Ensayos y Puesta en Marcha de PLC Altus, HMI Cimrex para Tablero TGBT"
+    ]
+  },
+  {
+    "title": "E.T. 132/33/13,2kV Aconquija EDECAT (Catamarca)",
+    "year": "2007-2008",
+    "sortYear": 2008,
+    "category": "energia-electrica",
+    "details": [
+      "Adaptación T. 132/33/13.2 kV",
+      "Adecuación, Ingeniería y Puesta en Marcha",
+      "Sistema de Comunicación por radio enlace",
+      "Puesta en Marcha del Sistema de Telecontrol regional RTU y Sistema de Control"
+    ]
+  },
+  {
+    "title": "Cooperativa Eléctrica Ltda. de Rufino (Santa Fe)",
+    "year": "2007",
+    "sortYear": 2007,
+    "category": "energia-electrica",
+    "details": [
+      "Programación y Configuración de Banco de Capacitores,",
+      "Programación PLC"
+    ]
+  },
+  {
+    "title": "Telecontrol SET 33/13,2kV YPF Nuevo Cerro Dragón-Cañadón Grande UTE (Chubut)",
+    "year": "2007",
+    "sortYear": 2007,
+    "category": "industria-oil-gas",
+    "details": [
+      "Provisión de Tablero de Telecontrol para ET Yacimiento YPF Pico Truncado Santa Cruz",
+      "Ingeniería, Programación PLC Rockwell,",
+      "Integración al SCADA, Ensayos, Puesta en Marcha"
+    ]
+  },
+  {
+    "title": "Sistema de Control SCADA Aire Comprimido y Refrigeración de Agua José M. Alladio e Hijos SA (Córdoba)",
+    "year": "2007",
+    "sortYear": 2007,
+    "category": "saneamiento",
+    "details": [
+      "Sistema de Supervisión y Control SCADA ELIPSE E3 para Sistema de Aire Comprimido y Circuito de refrigeración de Agua",
+      "Provisión, Programación y puesta en marcha PLC ALTUS",
+      "Ingeniería, Ensayos y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "Línea Urbana M.T. Loteo Tierras del Fundador Almafuerte (Córdoba)",
+    "year": "2006",
+    "sortYear": 2006,
+    "category": "energia-electrica",
+    "details": [
+      "Proyecto, Dirección y Representación Técnica",
+      "Ingeniería, Planos, informe técnico y cálculos Línea Urbana 2kV, Subestación Biposte y Líneas de distribución en B.T. preensambladas."
+    ]
+  },
+  {
+    "title": "José M. ALLADIO e Hijos SA (Córdoba)",
+    "year": "2005",
+    "sortYear": 2005,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3 para tres Subestaciones en Planta industrial Luque",
+      "Control y Distribución de Cargas",
+      "Provisión, Programación y puesta en marcha Remotos ALTUS",
+      "Ingeniería, Ensayos y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "S.E.T. ENERGIA de ENTRE RIOS (Entre Ríos)",
+    "year": "2005",
+    "sortYear": 2005,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión RTU Hadron ALTUS y puesta en marcha para SET Villaguay Sur",
+      "Provisión RTU Hadron ALTUS y puesta en marcha para SET Tala",
+      "Realización Gateway p/reporte en protocolo RP570 a SPIDER de ABB (Centro de Control Provincial de ENERSA)",
+      "Provisión de Repuestos"
+    ]
+  },
+  {
+    "title": "AFIP EDIFICIO CENTRAL (Buenos Aires)",
+    "year": "2005",
+    "sortYear": 2005,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Sistema Supervisión y Control Centralizado",
+      "SCADA ELIPSE E3 Server ilimitado, E3 Viewer, E3 Webserver",
+      "Provisión y puesta en marcha PLC ALTUS",
+      "Ingeniería y Desarrollo del Sistema",
+      "Ensayos",
+      "Entrenamiento de Personal Software Elipse E3 (Brasil)",
+      "Entrenamiento de Personal PLC ALTUS (Brasil)"
+    ]
+  },
+  {
+    "title": "AFIP EDIFICIO PASEO COLON (Buenos Aires)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Ampliación Sistema de Control y Supervisión",
+      "SCADA Elipse E3",
+      "Provisión y puesta en marcha ampliación de Remotos ALTUS",
+      "Ingeniería y Desarrollo de Ampliación del Sistema",
+      "Ensayos, Puesta en marcha"
+    ]
+  },
+  {
+    "title": "ET 132/33/13,2kV Móvil – ENERGIA de ENTRE RIOS (Entre Ríos)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "energia-electrica",
+    "details": [
+      "Habilitación de dos nuevos reconectadotes T. Móvil 132/33/13.2kV Paraná Este",
+      "Ingeniería, Ensayos"
+    ]
+  },
+  {
+    "title": "Chevron San Jorge S.R.L. (Neuquén)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "industria-oil-gas",
+    "details": [
+      "Ampliación Sistema de SCADA Software Elipse E3 Subestación Campamento El Trapial (Neuquén)",
+      "Ingeniería Puesta en Marcha",
+      "Integración al sistema de equipos GE"
+    ]
+  },
+  {
+    "title": "AES ALICURA SA (Buenos Aires)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión, Programación y Puesta en Marcha Sistema de Supervisión de Frecuencia CAMMESA"
+    ]
+  },
+  {
+    "title": "Yacimiento TOTAL AUSTRAL SA (Neuquén)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "industria-oil-gas",
+    "details": [
+      "Ingeniería, Programación y Puesta en Marcha PLC Rockwell",
+      "Provisión, Programación y Puesta en Marcha HMI Alarmas",
+      "Ingeniería y Desarrollo del Sistema, Ensayos",
+      "Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "EDEERSA Empresa de Electricidad de Entre Ríos S.A. (Entre Ríos)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "energia-electrica",
+    "details": [
+      "Adecuación Telecomando T. Móvil 132/33/13.2 kV",
+      "Provisión y puesta en marcha RTU Hadron",
+      "Realización Gateway  p/  reporte  en  protocolo  RP570  a  SPIDER  de  ABB  (Centro  de  Control Provincial EDEERSA)",
+      "Incorporación al Sistemas de Protecciones REF541, SPAU341, SEL387, RTU Hadron y Reconectadores",
+      "Provisión y Modificación de Tableros de Baja",
+      "Ingeniería y Desarrollo del Sistema, Ensayos",
+      "Entrenamiento de Personal"
+    ]
+  },
+  {
+    "title": "TRIBUNAL SUPERIOR DE JUSTICIA (Córdoba)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Sistema de Control y Supervisión SCADA Elipse Scada",
+      "Provisión y puesta en marcha PLC",
+      "Ingeniería y Desarrollo del Sistema, Ensayos, Entrenamiento de Personal"
+    ]
+  },
+  {
+    "title": "AFIP Edificio Paseo Colón (Buenos Aires)",
+    "year": "2004",
+    "sortYear": 2004,
+    "category": "edificios-inteligentes",
+    "details": [
+      "Sistema de Control y Supervisión SCADA Elipse E3",
+      "Provisión y puesta en marcha PLC",
+      "Ingeniería y Desarrollo del Sistema",
+      "Ensayos, Puesta en Marcha y Entrenamiento de Personal"
+    ]
+  },
+  {
+    "title": "Chevron San Jorge S.R.L. (Neuquén)",
+    "year": "2003-2004",
+    "sortYear": 2004,
+    "category": "industria-oil-gas",
+    "details": [
+      "SCADA local Elipse E3 T.33/13.2kV Subestación Campamento El Trapial (Neuquén)",
+      "Ingeniería Puesta en Marcha",
+      "Entrenamiento de Personal Software Elipse E3 Viewer / Modbus RTU / Modbus TCP",
+      "Provisión y puesta en marcha P LC",
+      "Integración al sistema de equipos GE,"
+    ]
+  },
+  {
+    "title": "Cooperativa Servicios Públicos de Concordia (Entre Ríos)",
+    "year": "2003",
+    "sortYear": 2003,
+    "category": "energia-electrica",
+    "details": [
+      "Sistema de Control Informatizado T. 132/33/13.2kV Río Uruguay Concordia (Entre Ríos)",
+      "SCADA Elipse local T. 132/33/13.2kV Río Uruguay.",
+      "Provisión y puesta en marcha RTU ALTUS",
+      "Integración al sistema de equipos Janitza, SEG, APT y RTU",
+      "Reporte en protocolo RP570 (ABB) a Centro de Control de",
+      "Reporte en protocolo DNP3.0 a Centro de Control Regional de TRASNEA"
+    ]
+  },
+  {
+    "title": "Cooperativa Servicios Públicos de Río Tercero (Córdoba)",
+    "year": "2000-2001",
+    "sortYear": 2001,
+    "category": "energia-electrica",
+    "details": [
+      "Sistema de Centralizado para sistema Eléctrico ciudad de Río",
+      "SCADA Elipse Scada Remoto Centro de Control",
+      "SCADA local Elipse Scada T. 66/33/13.2kV Río Tercero",
+      "Integración al sistema de equipos Multilin, Power Mesurement, RTU, Reconectadores Cooper y Seccionadores de Poste",
+      "SCADA y Sistema remoto de Ingeniería.",
+      "Monitoreo Remoto y Base de datos sistema"
+    ]
+  },
+  {
+    "title": "E.T. Colonia Elía EDEERSA – Entre Ríos",
+    "year": "2000",
+    "sortYear": 2000,
+    "category": "energia-electrica",
+    "details": [
+      "Programación, puesta en servicio remodelación T. 500/132kV Colonia Elía",
+      "Ampliación RTU ABB, y ajustes con Centro de Control (SCADA)",
+      "Programación y ajuste protecciones de impedancia SEL321, SEL551",
+      "Puesta en servicio 2 Líneas y",
+      "Implementación sistema tele protección."
+    ]
+  },
+  {
+    "title": "E.T. 132kV/66kV/13,2kV Ampliación Campo CT, Emgasud SA-ENERSA (Entre Ríos)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "energia-electrica",
+    "details": [
+      "Ingeniería, Ajustes, Ensayos y Puesta en Marcha de Protecciones SEL 387, 451-4",
+      "Ampliación e integración del Sistema de Control y Protecciones",
+      "Configuración de Equipos SEL 3332",
+      "Conectividad RTU-SEL3332",
+      "Comunicación con Sistema SPIDER"
+    ]
+  },
+  {
+    "title": "Sistema de Monitoreo y Control SCADA, Cooperativa Eléctrica General Deheza (Córdoba)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "energia-electrica",
+    "details": [
+      "Sistema de Supervisión y Control SCADA ELIPSE E3 para E.T., E.T 132kV, Planta de tratamientos de Líquidos Cloacales",
+      "Comunicación con modem GPRS",
+      "Ingeniería, Ensayos, Puesta en Marcha y Capacitación de personal"
+    ]
+  },
+  {
+    "title": "E.T. 132kV/66kV/13,2kV Villaguay ENERSA (Entre Ríos)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "saneamiento",
+    "details": [
+      "Implementación Sistema de Control y Protección de Protecciones",
+      "Ingeniería, Ajustes, Ensayos y Puesta en Marcha de Protecciones SEL 411, 387, 351",
+      "Configuración RTU SEL332 para DNP comunicación con Sistema SPIDER",
+      "Ensayos de aceptación de equipos de campo"
+    ]
+  },
+  {
+    "title": "S.E.T. 33/13,2kV Federal ENERSA (Entre Ríos)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "energia-electrica",
+    "details": [
+      "Ingeniería, Ajustes, Ensayos y Puesta en Marcha de Protecciones SEL 587",
+      "Ensayos TI, Seccionadores Unipolares",
+      "Ensayos de aceptación de equipos de campo"
+    ]
+  },
+  {
+    "title": "Sistema Supervisión y Control E.T. Valle Viejo EDECAT (Catamarca)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "energia-electrica",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3",
+      "Ingeniería."
+    ]
+  },
+  {
+    "title": "Sistema Control Yacimiento de Carbón YCRT (Río Turbio Santa Cruz)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "industria-oil-gas",
+    "details": [
+      "Provisión Sistema de Supervisión y Control ELIPSE E3",
+      "Provisión, Programación y puesta en marcha PLC Altus, HMI Beijer",
+      "Ingeniería, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
+    "title": "INTERNATIONAL ENGINES SOUHT AMERICA SA (Córdoba)",
+    "year": "S/D",
+    "sortYear": 0,
+    "category": "industria-oil-gas",
+    "details": [
+      "Provisión, Programación y Puesta en Marcha PLC ALTUS"
+    ]
+  }
+]

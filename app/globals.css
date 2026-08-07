@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+:root {
+  --color-ink: #0d0d0d;
+  --color-ink-soft: #2a2f34;
+  --color-paper: #ffffff;
+  --color-paper-dim: #f1f1f1;
+  --color-red: #e2001a;
+  --color-red-dark: #a10014;
+  --color-steel: #545b62;
+  --color-steel-light: #c7cbce;
+  --color-amber: #ffb000;
+  --color-green-signal: #00a651;
+
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@theme inline {
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-paper: var(--color-paper);
+  --color-paper-dim: var(--color-paper-dim);
+  --color-red: var(--color-red);
+  --color-red-dark: var(--color-red-dark);
+  --color-steel: var(--color-steel);
+  --color-steel-light: var(--color-steel-light);
+  --color-amber: var(--color-amber);
+  --color-green-signal: var(--color-green-signal);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-mono: var(--font-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.font-mono-data {
+  font-family: var(--font-mono), ui-monospace, monospace;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-red);
+  outline-offset: 2px;
+}
+
+/* Signature: schematic bus-line divider */
+.bus-divider {
+  position: relative;
+  height: 2px;
+  background: var(--color-steel-light);
+  width: 100%;
+}
+.bus-divider::before,
+.bus-divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  transform: translateY(-50%);
+  border: 2px solid var(--color-steel);
+  background: var(--color-paper);
+  border-radius: 9999px;
+}
+.bus-divider::before { left: 0; }
+.bus-divider::after { right: 0; }
+
+/* status indicator pulse */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+.status-dot-live {
+  animation: pulse-dot 2.4s ease-in-out infinite;
+}
