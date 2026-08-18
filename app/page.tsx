@@ -4,6 +4,7 @@ import { projectCount } from "@/lib/data/projects";
 import ServiceCard from "@/components/home/ServiceCard";
 import BusDivider from "@/components/ui/BusDivider";
 import HeroCarousel from "@/components/home/HeroCarousel";
+import HeroVideo from "@/components/home/HeroVideo";
 
 export default function Home() {
   const yearsActive = new Date().getFullYear() - site.foundedYear;
@@ -11,6 +12,8 @@ export default function Home() {
   return (
     <>
       <HeroCarousel />
+
+      <HeroVideo />
 
       <BusDivider />
 

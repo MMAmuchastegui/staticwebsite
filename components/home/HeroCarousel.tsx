@@ -95,17 +95,38 @@ const slides: Slide[] = [
 
 export default function HeroCarousel() {
   const [index, setIndex] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  const total = slides.length;
+
+  const goTo = (i: number) => setIndex(((i % total) + total) % total);
+  const next = () => goTo(index + 1);
+  const prev = () => goTo(index - 1);
 
   useEffect(() => {
+    if (paused || total <= 1) return;
+
+    // Respeta la preferencia de "reducir movimiento" del sistema operativo
+    if (
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)").matches
+    ) {
+      return;
+    }
+
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % slides.length);
+      setIndex((prev) => (prev + 1) % total);
     }, 6000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [paused, total]);
 
   return (
-    <section className="relative h-[80vh] min-h-[650px] overflow-hidden bg-ink">
+    <section
+      className="relative h-[80vh] min-h-[650px] overflow-hidden bg-ink"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
       {/* Imágenes */}
       {slides.map((slide, i) => (
         <Image
@@ -188,13 +209,31 @@ export default function HeroCarousel() {
         ))}
       </div>
 
+      {/* Flechas prev/next */}
+      <button
+        type="button"
+        aria-label="Diapositiva anterior"
+        onClick={prev}
+        className="absolute left-3 md:left-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white/80 transition-colors hover:border-red hover:text-red"
+      >
+        ‹
+      </button>
+      <button
+        type="button"
+        aria-label="Siguiente diapositiva"
+        onClick={next}
+        className="absolute right-3 md:right-6 top-1/2 -translate-y-1/2 z-20 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 text-white/80 transition-colors hover:border-red hover:text-red"
+      >
+        ›
+      </button>
+
       {/* Indicadores */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-3">
         {slides.map((_, i) => (
           <button
             key={i}
             aria-label={`Ir a la diapositiva ${i + 1}`}
-            onClick={() => setIndex(i)}
+            onClick={() => goTo(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
               i === index
                 ? "w-8 bg-red"
