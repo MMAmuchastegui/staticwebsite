@@ -45,8 +45,6 @@ const slides: Slide[] = [
     kicker: "NUESTROS SERVICIOS",
     heading: [
       "Soluciones a medida",
-      "para cada",
-      "área de su negocio",
     ],
     text: "Energía eléctrica, saneamiento, industria oil & gas y edificios inteligentes: la solución técnica y económica apropiada para su emprendimiento.",
     buttons: [
@@ -61,11 +59,11 @@ const slides: Slide[] = [
     image: "/images/hero-slide-03.jpg",
     kicker: "TRAYECTORIA",
     heading: [
-      `+${projectCount} proyectos`,
-      "ejecutados desde",
-      `${site.foundedYear}`,
+      "Brindando soluciones",
+      "de ingeniería",
+      `desde ${site.foundedYear}`,
     ],
-    text: "Un registro de más de dos décadas integrando sistemas de control para empresas de energía, industria y gobierno en todo el país.",
+    text: "Más de dos décadas de experiencia desarrollando e integrando sistemas de control para proyectos de infraestructura e industria.",
     buttons: [
       {
         label: "NUESTRO TRABAJO",
@@ -76,16 +74,16 @@ const slides: Slide[] = [
   },
   {
     image: "/images/hero-slide-04.jpg",
-    kicker: "HABLEMOS",
+    kicker: "CONTACTO",
     heading: [
-      "¿Tiene un proyecto",
-      "de automatización",
-      "en mente?",
+      "Desarrollemos la",
+      "solución adecuada para",
+      "su proyecto",
     ],
-    text: "Cuéntenos qué necesita y le respondemos a la brevedad con la solución técnica adecuada.",
+    text: "Nuestro equipo de ingeniería está preparado para analizar sus requerimientos y ofrecer una propuesta técnica adaptada a las necesidades de su empresa, garantizando calidad, eficiencia y confiabilidad en cada etapa del proceso.",
     buttons: [
       {
-        label: "CONTÁCTENOS",
+        label: "SOLICITAR ASESORAMIENTO",
         href: "/contacto",
         primary: true,
       },
@@ -106,7 +104,6 @@ export default function HeroCarousel() {
   useEffect(() => {
     if (paused || total <= 1) return;
 
-    // Respeta la preferencia de "reducir movimiento" del sistema operativo
     if (
       typeof window !== "undefined" &&
       window.matchMedia?.("(prefers-reduced-motion: reduce)").matches

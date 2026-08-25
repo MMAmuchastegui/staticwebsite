@@ -18,53 +18,26 @@ export default function NuestroTrabajo() {
       <section className="bg-ink text-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-20 grid md:grid-cols-[1.3fr_1fr] gap-10 items-end">
           <div>
-            <div className="font-mono-data text-xs text-red mb-2">NUESTRO TRABAJO</div>
+            <div className="font-mono-data text-xs text-red mb-2">
+              NUESTRA TRAYECTORIA
+            </div>
+
             <h1 className="text-4xl md:text-5xl text-white leading-[1.05]">
-              Más de {projectCount} proyectos ejecutados desde {site.foundedYear}
+              Brindando soluciones de ingeniería desde {site.foundedYear}
             </h1>
+
             <p className="mt-5 text-steel-light text-[15px] max-w-xl normal-case">
-              Durante más de dos décadas acompañamos a empresas de energía,
-              industria, saneamiento y edificios inteligentes en todo el
-              país.
+              Desde {site.foundedYear}, desarrollamos e integramos sistemas de
+              control para proyectos de infraestructura e industria, acompañando a
+              empresas de los sectores energético, saneamiento, oil & gas y
+              edificios inteligentes con soluciones confiables, eficientes y
+              adaptadas a los requerimientos de cada proyecto.
             </p>
-          </div>
-          <div className="grid grid-cols-2 gap-6 sm:gap-8">
-            {[
-              { value: `${yearsActive}+`, label: "Años" },
-              { value: `${projectCount}+`, label: "Proyectos" },
-              { value: `${clients.length}+`, label: "Clientes" },
-              { value: "4", label: "Áreas" },
-            ].map((s) => (
-              <div key={s.label}>
-                <div className="font-display text-4xl text-red">{s.value}</div>
-                <div className="text-xs font-mono-data text-steel-light uppercase tracking-wide">
-                  {s.label}
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
 
       <BusDivider />
-
-      {/* CLIENT WALL */}
-      <section className="mx-auto max-w-6xl px-5 py-14">
-        <div className="font-mono-data text-xs text-steel mb-6 text-center uppercase tracking-wide">
-          Empresas y organismos que confiaron en GEDING
-        </div>
-        <div className="flex flex-wrap justify-center gap-x-8 gap-y-4">
-          {clients.map((c) => (
-            <span
-              key={c}
-              className="font-display text-lg sm:text-xl text-steel-light hover:text-red transition-colors cursor-default"
-              style={{ color: "var(--color-steel)" }}
-            >
-              {c}
-            </span>
-          ))}
-        </div>
-      </section>
 
       <BusDivider />
 
