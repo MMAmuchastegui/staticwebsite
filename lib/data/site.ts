@@ -15,34 +15,6 @@ export const mainNav = [
   { href: "/contacto", label: "Contacto" },
 ];
 
-export const clients = [
-  "EPEC",
-  "ENERSA",
-  "AFIP",
-  "Chevron",
-  "YPF",
-  "Petrobras Argentina",
-  "Banco de Córdoba (BANCOR)",
-  "CELSIA Panamá",
-  "SIDERAR",
-  "Bunge",
-  "MWM Internacional Motores",
-  "Central Nuclear Embalse",
-  "PROMIAZ Bioethanol",
-  "EDECAT",
-  "Electroingeniería SA",
-  "Pampa Energía",
-  "YCRT",
-  "Total Austral",
-  "AES Alicura",
-  "Gobierno de Córdoba",
-  "Tribunal Superior de Justicia",
-  "EDEERSA",
-  "Emgasud",
-  "REMSA",
-  "José M. Alladio e Hijos",
-];
-
 export type ServiceSlug =
   | "energia-electrica"
   | "saneamiento"
