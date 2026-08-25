@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { clients, site } from "@/lib/data/site";
 import { projects, projectCount } from "@/lib/data/projects";
 import NuestroTrabajoExplorer from "@/components/nuestro-trabajo/NuestroTrabajoExplorer";
 import BusDivider from "@/components/ui/BusDivider";
