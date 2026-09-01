@@ -56,7 +56,9 @@ export default function Home() {
       </section>
 
       <BusDivider />
-
+Integramos los sistemas
+que controlan la
+infraestructura crítica
       {/* CTA */}
       <section className="mx-auto max-w-6xl px-5 py-20 text-center">
         <h2 className="text-3xl md:text-4xl text-ink">

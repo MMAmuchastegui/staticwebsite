@@ -28,7 +28,7 @@ export default function Contacto() {
         <div className="space-y-8">
           <div>
             <div className="flex items-center gap-2 font-mono-data text-xs text-steel mb-3">
-              <StatusDot color="green" />
+              <StatusDot color="red" />
               INFORMACIÓN DE CONTACTO
             </div>
             <ul className="space-y-3 text-[15px]">

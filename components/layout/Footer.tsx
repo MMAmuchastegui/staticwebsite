@@ -14,7 +14,7 @@ export default function Footer() {
             Ingeniería especializada en integración de sistemas de control desde {site.foundedYear}.
           </p>
           <div className="mt-5 flex items-center gap-2 text-xs font-mono-data text-steel-light">
-            <StatusDot color="green" />
+            <StatusDot color="red" />
             SISTEMA EN LÍNEA
           </div>
         </div>

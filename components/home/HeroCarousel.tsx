@@ -22,11 +22,7 @@ const slides: Slide[] = [
   {
     image: "/images/hero-slide-01.jpg",
     kicker: `OPERANDO DESDE ${site.foundedYear}`,
-    heading: [
-      "Integramos los sistemas",
-      "que controlan la",
-      "infraestructura crítica",
-    ],
+    heading: [],
     text: "Somos una empresa de servicios de ingeniería especializada en la integración de Sistemas de Control, con importantes clientes y sistemas que lo avalan.",
     buttons: [
       {
@@ -43,9 +39,7 @@ const slides: Slide[] = [
   {
     image: "/images/hero-slide-02.jpg",
     kicker: "NUESTROS SERVICIOS",
-    heading: [
-      "Soluciones a medida",
-    ],
+    heading: [],
     text: "Energía eléctrica, saneamiento, industria oil & gas y edificios inteligentes: la solución técnica y económica apropiada para su emprendimiento.",
     buttons: [
       {
@@ -75,11 +69,7 @@ const slides: Slide[] = [
   {
     image: "/images/hero-slide-04.jpg",
     kicker: "CONTACTO",
-    heading: [
-      "Desarrollemos la",
-      "solución adecuada para",
-      "su proyecto",
-    ],
+    heading: [],
     text: "Nuestro equipo de ingeniería está preparado para analizar sus requerimientos y ofrecer una propuesta técnica adaptada a las necesidades de su empresa, garantizando calidad, eficiencia y confiabilidad en cada etapa del proceso.",
     buttons: [
       {
@@ -177,7 +167,13 @@ export default function HeroCarousel() {
               ))}
             </h1>
 
-            <p className="mt-6 max-w-md text-steel-light text-base leading-relaxed">
+            <p
+              className={`mt-6 max-w-xl text-white leading-relaxed ${
+                slide.heading.length === 0
+                  ? "text-2xl md:text-3xl font-bold"
+                  : "text-base md:text-lg font-normal"
+              }`}
+            >
               {slide.text}
             </p>
 
