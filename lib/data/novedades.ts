@@ -35,3 +35,12 @@ export function getActiveNovedades(): Novedad[] {
 export function getFeaturedProjects(count = 4): Project[] {
   return [...projects].sort((a, b) => b.sortYear - a.sortYear).slice(0, count);
 }
+export type NovedadProyecto = Extract<Novedad, { type: "proyecto" }>;
+export type NovedadEvento = Extract<Novedad, { type: "evento" }>;
+
+export function splitNovedades(novedades: Novedad[]) {
+  return {
+    proyectos: novedades.filter((n): n is NovedadProyecto => n.type === "proyecto"),
+    eventos: novedades.filter((n): n is NovedadEvento => n.type === "evento"),
+  };
+}
