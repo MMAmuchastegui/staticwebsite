@@ -1,5 +1,19 @@
 [
   {
+    "id": "sistema-de-automatismos-y-control-scada-sotr-smec-rtu-complementarias-parque-solar-fotovoltaico-parana-entre-rios",
+    "title": "Sistema de Automatismos y Control SCADA, SOTR, SMEC, RTU complementarias Parque Solar Fotovoltaico PARANA, Entre Rios",
+    "year": "2026",
+    "sortYear": 2026,
+    "category": "energia-electrica",
+    "details": [
+      "Sistema Protección, Control y Comunicaciones",
+      "Provisión y Programación de Sistema SCADA ELIPSE E3, SOTR, SMEC, RTU, PCC",
+      "Provisión y Montaje de la estación meteorológica para el Parque Solar Fotovoltaico",
+      "Red de comunicación",
+      "Ingeniería de detalle, conexionado, Ensayos, Puesta en Marcha del Sistema y Entrenamiento de personal"
+    ]
+  },
+  {
     "title": "Ingeniería de Protecciones AGD, Selectividad Planta General Deheza Córdoba Año 2019-2020",
     "year": "2019",
     "sortYear": 2019,
@@ -1743,7 +1757,7 @@
       "Mantenimiento de Estaciones de Operación",
       "Normalización de Redes y Cableado Estructurado y Configuración de Seguridad de Switches",
       "Mejoras en sistema de transmisión e implementación de comunicación con CND",
-      "Gesti\u00f3n de pantallas, eventos, alarmas y registros",
+      "Gestión de pantallas, eventos, alarmas y registros",
       "Dictado de Curso de Elipse E3 Nivel 2"
     ]
   },
