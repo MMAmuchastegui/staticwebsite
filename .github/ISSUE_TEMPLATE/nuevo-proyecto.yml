@@ -1,0 +1,48 @@
+name: Nuevo proyecto
+description: Cargar un proyecto nuevo en projects.json y novedades.json
+title: "[nuevo-proyecto] "
+labels: ["nuevo-proyecto"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Nombre del proyecto
+    validations:
+      required: true
+  - type: input
+    id: year
+    attributes:
+      label: Año (ej. 2026 o 2025-2026)
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Categoría
+      options:
+        - energia-electrica
+        - saneamiento
+        - industria-oil-gas
+        - edificios-inteligentes
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detalles (uno por línea)
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Estado
+      options:
+        - nuevo
+        - en-ejecucion
+        - finalizado
+    validations:
+      required: true
+  - type: input
+    id: expires
+    attributes:
+      label: Días que permanece en Novedades (dejar vacío = 60)

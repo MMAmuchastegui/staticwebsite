@@ -1,0 +1,39 @@
+name: Procesar Novedad
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  procesar:
+    if: contains(github.event.issue.labels.*.name, 'nuevo-proyecto') || contains(github.event.issue.labels.*.name, 'novedad-evento')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Ejecutar script
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_LABELS: ${{ toJson(github.event.issue.labels.*.name) }}
+        run: |
+          node -e "
+            const { procesarNuevoProyecto, procesarNuevaNovedadEvento } = require('./scripts/procesar-novedad.js');
+            const labels = JSON.parse(process.env.ISSUE_LABELS);
+            const run = labels.includes('novedad-evento') ? procesarNuevaNovedadEvento : procesarNuevoProyecto;
+            run(process.env.ISSUE_BODY).then(r => console.log(JSON.stringify(r)));
+          "
+      - name: Commit y push
+        run: |
+          git config user.name "geding-bot"
+          git config user.email "actions@github.com"
+          git add lib/data/*.json public/images/novedades
+          git commit -m "novedad: ${{ github.event.issue.title }}" || echo "sin cambios"
+          git push
+      - name: Cerrar issue
+        uses: peter-evans/close-issue@v3
+        with:
+          comment: "✅ Novedad publicada. El sitio se actualizará en unos minutos."

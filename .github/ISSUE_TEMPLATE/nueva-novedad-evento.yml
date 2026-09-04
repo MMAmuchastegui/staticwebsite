@@ -1,0 +1,47 @@
+name: "📸 Nueva Novedad (Evento)"
+description: "Feria, exposición, capacitación u otra novedad sin proyecto asociado"
+title: "[Novedad] "
+labels: ["novedad-evento"]
+body:
+  - type: input
+    id: titulo
+    attributes:
+      label: Título
+      placeholder: "GEDING presente en la Feria de Saneamiento 2026"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: Tipo de evento
+      options: [Feria, Exposición, Capacitación, Reconocimiento, Otro]
+    validations:
+      required: true
+
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Descripción
+      placeholder: "Un par de líneas sobre qué pasó."
+    validations:
+      required: true
+
+  - type: input
+    id: lugar
+    attributes:
+      label: Lugar (opcional)
+
+  - type: textarea
+    id: fotos
+    attributes:
+      label: Fotos
+      description: >
+        Arrastrá o pegá las imágenes directamente en este campo
+        (podés subir varias, una al lado de la otra).
+
+  - type: input
+    id: dias
+    attributes:
+      label: "Días que permanece en Novedades (dejar vacío = 30)"
+      placeholder: "30"

@@ -1,0 +1,71 @@
+name: Cargar nuevo proyecto
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  procesar:
+    if: contains(github.event.issue.labels.*.name, 'nuevo-proyecto')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Procesar issue y actualizar JSON
+        id: procesar
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { procesarNuevoProyecto } = require('./scripts/procesar-nuevo-proyecto.js');
+            try {
+              const { id, title } = procesarNuevoProyecto(context.payload.issue.body);
+              core.setOutput('project_id', id);
+              core.setOutput('project_title', title);
+              core.setOutput('success', 'true');
+            } catch (err) {
+              core.setOutput('success', 'false');
+              core.setOutput('error_message', err.message);
+            }
+
+      - name: Commit y push
+        if: steps.procesar.outputs.success == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "novedades: agregar proyecto ${{ steps.procesar.outputs.project_title }}"
+          file_pattern: "lib/data/projects-raw.json lib/data/novedades-raw.json"
+
+      - name: Comentar éxito
+        if: steps.procesar.outputs.success == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ Proyecto publicado: **${{ steps.procesar.outputs.project_title }}**\n\nId: \`${{ steps.procesar.outputs.project_id }}\`\n\nEl sitio se va a re-generar automáticamente con el próximo deploy.`,
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              labels: ['nuevo-proyecto', 'publicado'],
+            });
+
+      - name: Comentar error
+        if: steps.procesar.outputs.success == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `❌ No se pudo procesar el proyecto: ${{ steps.procesar.outputs.error_message }}\n\nRevisá los campos obligatorios y volvé a intentar creando un nuevo issue.`,
+            });

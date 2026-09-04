@@ -11,6 +11,7 @@ export const mainNav = [
   { href: "/", label: "Inicio" },
   { href: "/quienes-somos", label: "Quiénes somos" },
   { href: "/servicios", label: "Servicios" },
+  { href: "/novedades", label: "Novedades" },
   { href: "/nuestro-trabajo", label: "Nuestro trabajo" },
   { href: "/contacto", label: "Contacto" },
 ];

@@ -2,6 +2,7 @@ import raw from "./projects-raw.json";
 import type { ServiceSlug } from "./site";
 
 export interface Project {
+  id?: string;
   title: string;
   year: string;
   sortYear: number;
