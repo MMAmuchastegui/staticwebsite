@@ -8,6 +8,7 @@ export interface Project {
   sortYear: number;
   category: ServiceSlug;
   details: string[];
+  images?: string[];
 }
 
 export const projects = raw as Project[];

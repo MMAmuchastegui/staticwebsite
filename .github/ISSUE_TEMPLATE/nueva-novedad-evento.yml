@@ -1,4 +1,4 @@
-name: "📸 Nueva Novedad (Evento)"
+name: "Nueva Novedad (Evento)"
 description: "Feria, exposición, capacitación u otra novedad sin proyecto asociado"
 title: "[Novedad] "
 labels: ["novedad-evento"]
@@ -15,7 +15,7 @@ body:
     id: tipo
     attributes:
       label: Tipo de evento
-      options: [Feria, Exposición, Capacitación, Reconocimiento, Otro]
+      options: [Feria, Exposición, Capacitación, Reconocimiento, Pasantías, Otro]
     validations:
       required: true
 

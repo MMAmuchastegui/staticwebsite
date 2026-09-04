@@ -69,3 +69,4 @@ jobs:
               issue_number: context.issue.number,
               body: `❌ No se pudo procesar el proyecto: ${{ steps.procesar.outputs.error_message }}\n\nRevisá los campos obligatorios y volvé a intentar creando un nuevo issue.`,
             });
+        

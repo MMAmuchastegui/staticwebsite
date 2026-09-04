@@ -1,39 +1,69 @@
 name: Procesar Novedad
+
 on:
   issues:
     types: [opened]
 
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   procesar:
-    if: contains(github.event.issue.labels.*.name, 'nuevo-proyecto') || contains(github.event.issue.labels.*.name, 'novedad-evento')
+    if: contains(github.event.issue.labels.*.name, 'novedad-evento')
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-      issues: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+
+      - name: Procesar issue y actualizar JSON
+        id: procesar
+        uses: actions/github-script@v7
         with:
-          node-version: 20
-      - name: Ejecutar script
-        env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
-          ISSUE_LABELS: ${{ toJson(github.event.issue.labels.*.name) }}
-        run: |
-          node -e "
-            const { procesarNuevoProyecto, procesarNuevaNovedadEvento } = require('./scripts/procesar-novedad.js');
-            const labels = JSON.parse(process.env.ISSUE_LABELS);
-            const run = labels.includes('novedad-evento') ? procesarNuevaNovedadEvento : procesarNuevoProyecto;
-            run(process.env.ISSUE_BODY).then(r => console.log(JSON.stringify(r)));
-          "
+          script: |
+            const path = require('path');
+            const { procesarNuevaNovedadEvento } = require(
+              path.join(process.env.GITHUB_WORKSPACE, 'scripts', 'procesar-novedad.js')
+            );
+            try {
+              const { id, title } = await procesarNuevaNovedadEvento(context.payload.issue.body);
+              core.setOutput('novedad_id', id);
+              core.setOutput('novedad_title', title);
+              core.setOutput('success', 'true');
+            } catch (err) {
+              core.setOutput('success', 'false');
+              core.setOutput('error_message', err.message);
+            }
+
       - name: Commit y push
-        run: |
-          git config user.name "geding-bot"
-          git config user.email "actions@github.com"
-          git add lib/data/*.json public/images/novedades
-          git commit -m "novedad: ${{ github.event.issue.title }}" || echo "sin cambios"
-          git push
-      - name: Cerrar issue
-        uses: peter-evans/close-issue@v3
+        if: steps.procesar.outputs.success == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          comment: "✅ Novedad publicada. El sitio se actualizará en unos minutos."
+          commit_message: "novedades: agregar evento ${{ steps.procesar.outputs.novedad_title }}"
+          file_pattern: "lib/data/novedades-raw.json public/images/novedades"
+
+      - name: Comentar éxito
+        if: steps.procesar.outputs.success == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `✅ Novedad publicada: **${{ steps.procesar.outputs.novedad_title }}**`,
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number, state: 'closed',
+              labels: ['novedad-evento', 'publicado'],
+            });
+
+      - name: Comentar error
+        if: steps.procesar.outputs.success == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.issues.createComment({
+              owner: context.repo.owner, repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `❌ No se pudo procesar la novedad: ${{ steps.procesar.outputs.error_message }}`,
+            });

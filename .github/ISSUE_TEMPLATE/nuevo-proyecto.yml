@@ -46,3 +46,8 @@ body:
     id: expires
     attributes:
       label: Días que permanece en Novedades (dejar vacío = 60)
+  - type: textarea
+    id: fotos
+    attributes:
+      label: Fotos (opcional)
+      description: Arrastrá o pegá imágenes del proyecto acá.

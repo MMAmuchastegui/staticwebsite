@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const { descargarImagen, extractImageUrls } = require("./github-images.js");
 
 const PROJECTS_PATH = path.join(__dirname, "..", "lib", "data", "projects-raw.json");
 const NOVEDADES_PATH = path.join(__dirname, "..", "lib", "data", "novedades-raw.json");
@@ -42,7 +43,7 @@ function uniqueSlug(base, existingIds) {
   return slug;
 }
 
-function procesarNuevoProyecto(issueBody) {
+async function procesarNuevoProyecto(issueBody) {
   const fields = parseIssueBody(issueBody);
 
   const title = fields["Nombre del proyecto"];
@@ -64,7 +65,24 @@ function procesarNuevoProyecto(issueBody) {
   const existingIds = new Set(projects.map((p) => p.id).filter(Boolean));
   const id = uniqueSlug(slugify(title), existingIds);
 
-  const newProject = { id, title, year, sortYear: extractSortYear(year), category, details };
+  // Descargar imágenes
+  const fotosRaw = fields["Fotos (opcional)"] || "";
+  const imageUrls = extractImageUrls(fotosRaw);
+  const destDir = path.join(__dirname, "..", "public", "images", "proyectos");
+  const images = [];
+  for (let i = 0; i < imageUrls.length; i++) {
+    images.push(await descargarImagen(imageUrls[i], destDir, id, i + 1));
+  }
+
+  const newProject = { 
+    id, 
+    title, 
+    year, 
+    sortYear: extractSortYear(year), 
+    category, 
+    details,
+    images 
+  };
 
   const parsedExpires = parseInt(expiresRaw, 10);
   const expiresInDays = Number.isFinite(parsedExpires) ? parsedExpires : undefined;
