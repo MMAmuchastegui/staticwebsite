@@ -44,3 +44,15 @@ export function splitNovedades(novedades: Novedad[]) {
     eventos: novedades.filter((n): n is NovedadEvento => n.type === "evento"),
   };
 }
+
+export function hasNovedades(): boolean {
+  // Esto asume que tienes un array de novedades exportado
+  // Si tu archivo exporta algo como: export const novedades: Novedad[] = [...]
+  // entonces:
+  try {
+    const { novedades } = require('./novedades'); // o la ruta correcta
+    return novedades && novedades.length > 0;
+  } catch {
+    return false;
+  }
+}

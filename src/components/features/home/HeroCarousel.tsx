@@ -21,7 +21,7 @@ interface Slide {
 const slides: Slide[] = [
   {
     image: "/images/hero-slide-01.jpg",
-    kicker: `OPERANDO DESDE ${site.foundedYear}`,
+    kicker: `DESARROLLANDO SISTEMAS DE CONTROL DESDE ${site.foundedYear}`,
     heading: [],
     text: "Somos una empresa de servicios de ingeniería especializada en la integración de Sistemas de Control, con importantes clientes y sistemas que lo avalan.",
     buttons: [
@@ -77,7 +77,7 @@ export default function HeroCarousel() {
 
   return (
     <section
-      className="relative h-[80vh] min-h-[650px] overflow-hidden bg-ink"
+      className="relative h-[60vh] min-h-[500px] max-h-[700px] overflow-hidden bg-ink"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -121,11 +121,11 @@ export default function HeroCarousel() {
                 : "opacity-0 translate-y-3 pointer-events-none"
             }`}
           >
-            <div className="flex items-center gap-2 font-mono-data text-xs text-red mb-5 uppercase tracking-wider">
+            <div className="flex items-center gap-2 font-mono-data text-[12px] text-red mb-4 uppercase tracking-wider">
               <span className="h-2 w-2 rounded-full bg-red" />
               {slide.kicker}
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-white">
+            <h1 className="text-3xl md:text-5xl font-bold leading-tight text-white">
               {slide.heading.map((line, j) => (
                 <span key={j} className="block">
                   {line}
@@ -133,9 +133,9 @@ export default function HeroCarousel() {
               ))}
             </h1>
             <p
-              className={`mt-6 max-w-xl text-white leading-relaxed ${
+              className={`mt-5 max-w-xl text-white leading-relaxed ${
                 slide.heading.length === 0
-                  ? "text-2xl md:text-3xl font-bold"
+                  ? "text-xl md:text-2xl font-bold"
                   : "text-base md:text-lg font-normal"
               }`}
             >
@@ -147,7 +147,7 @@ export default function HeroCarousel() {
                   <Link
                     key={button.label}
                     href={button.href}
-                    className="bg-red hover:bg-red-dark px-6 py-3 text-white font-display transition-colors"
+                    className="bg-red hover:bg-red-dark px-6 py-2.5 text-sm text-white font-display transition-colors"
                   >
                     {button.label}
                   </Link>
@@ -155,7 +155,7 @@ export default function HeroCarousel() {
                   <Link
                     key={button.label}
                     href={button.href}
-                    className="border border-white/40 px-6 py-3 text-white hover:border-red hover:text-red transition-colors"
+                    className="border border-white/40 px-6 py-2.5 text-sm text-white hover:border-red hover:text-red transition-colors"
                   >
                     {button.label}
                   </Link>

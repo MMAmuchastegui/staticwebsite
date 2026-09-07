@@ -2,13 +2,42 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { mainNav } from "@/lib/data/site";
+import { getActiveNovedades } from "@/lib/data/novedades";
+
+const SEEN_KEY = "novedades_seen_count";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const [hasNovedades, setHasNovedades] = useState(false);
+  const [novedadesCount, setNovedadesCount] = useState(0);
   const pathname = usePathname();
+
+  // Chequea si hay novedades nuevas no vistas
+  useEffect(() => {
+    try {
+      const activas = getActiveNovedades();
+      const count = activas.length;
+      setNovedadesCount(count);
+
+      const seenCount = Number(localStorage.getItem(SEEN_KEY) ?? 0);
+      setHasNovedades(count > seenCount);
+    } catch (error) {
+      console.error("Error checking novedades:", error);
+      setHasNovedades(false);
+      setNovedadesCount(0);
+    }
+  }, []);
+
+  // Al entrar a /novedades, marca como visto
+  useEffect(() => {
+    if (pathname === "/novedades" && novedadesCount > 0) {
+      localStorage.setItem(SEEN_KEY, String(novedadesCount));
+      setHasNovedades(false);
+    }
+  }, [pathname, novedadesCount]);
 
   return (
     <header className="sticky top-0 z-50 bg-paper/95 backdrop-blur border-b border-steel-light">
@@ -27,6 +56,10 @@ export default function Header() {
         <nav className="hidden md:flex items-center gap-8 font-display text-[15px] tracking-wide">
           {mainNav.map((item) => {
             const active = pathname === item.href || (item.href !== "/" && pathname?.startsWith(item.href));
+            const isNovedades = item.href === "/novedades" || 
+                               item.label.toLowerCase().includes("novedad") ||
+                               item.label.toLowerCase().includes("noticia");
+            
             return (
               <Link
                 key={item.href}
@@ -35,7 +68,16 @@ export default function Header() {
                   active ? "text-red" : "text-ink"
                 }`}
               >
-                {item.label}
+                <span className="flex items-center gap-2">
+                  {item.label}
+                  {isNovedades && hasNovedades && (
+                    <span className="relative flex h-5 w-5 items-center justify-center">
+                      <span className="relative inline-flex h-5 w-5 items-center justify-center rounded-full bg-red text-[10px] font-bold text-white">
+                        {novedadesCount}
+                      </span>
+                    </span>
+                  )}
+                </span>
                 {active && (
                   <span className="absolute left-0 right-0 -bottom-[1px] h-[3px] bg-red" />
                 )}
@@ -58,11 +100,26 @@ export default function Header() {
 
       {open && (
         <nav className="md:hidden border-t border-steel-light bg-paper px-5 py-4 flex flex-col gap-4 font-display text-lg">
-          {mainNav.map((item) => (
-            <Link key={item.href} href={item.href} onClick={() => setOpen(false)} className="py-1">
-              {item.label}
-            </Link>
-          ))}
+          {mainNav.map((item) => {
+            const isNovedades = item.href === "/novedades" || 
+                               item.label.toLowerCase().includes("novedad") ||
+                               item.label.toLowerCase().includes("noticia");
+            return (
+              <Link 
+                key={item.href} 
+                href={item.href} 
+                onClick={() => setOpen(false)} 
+                className="py-1 flex items-center gap-2"
+              >
+                {item.label}
+                {isNovedades && hasNovedades && (
+                  <span className="relative flex h-2.5 w-2.5">
+                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-red"></span>
+                  </span>
+                )}
+              </Link>
+            );
+          })}
         </nav>
       )}
     </header>

@@ -19,8 +19,7 @@ export default function Novedades() {
     <>
       <section className="bg-ink text-paper">
         <div className="mx-auto max-w-6xl px-5 py-16 md:py-20">
-          <div className="font-mono-data text-xs text-red mb-2">NOVEDADES</div>
-          <h1 className="text-4xl md:text-5xl text-white">Lo último en GEDING</h1>
+          <div className="font-mono-data text-[50px] text-white mb-2">NOVEDADES</div>
         </div>
       </section>
 

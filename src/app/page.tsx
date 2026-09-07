@@ -17,23 +17,6 @@ export default function Home() {
 
       <BusDivider />
 
-      {/* STATS STRIP */}
-      <section className="bg-ink">
-        <div className="mx-auto max-w-6xl px-5 py-10 flex justify-center gap-12 text-center">
-          {[
-            { value: `${yearsActive}+`, label: "Años de trayectoria" },
-            { value: `${projectCount}+`, label: "Proyectos ejecutados" },
-          ].map((s) => (
-            <div key={s.label}>
-              <div className="font-display text-4xl text-red">{s.value}</div>
-              <div className="text-xs font-mono-data text-steel-light mt-1 uppercase tracking-wide">
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* SERVICES */}
       <section className="mx-auto max-w-6xl px-5 py-20">
         <div className="max-w-2xl">

@@ -6,11 +6,6 @@ import { groupByYear } from "@/lib/data/projects";
 import { services } from "@/lib/data/site";
 import ProjectCard from "./ProjectCard";
 
-const filters = [
-  { slug: "all", name: "Todos" },
-  ...services.map((s) => ({ slug: s.slug, name: s.name })),
-];
-
 export default function ProjectTimeline({ projects }: { projects: Project[] }) {
   const [active, setActive] = useState<string>("all");
   const [expanded, setExpanded] = useState<string | null>(null);
@@ -24,28 +19,6 @@ export default function ProjectTimeline({ projects }: { projects: Project[] }) {
 
   return (
     <>
-      {/* Filters */}
-      <div className="flex flex-wrap gap-2 mb-12">
-        {filters.map((f) => (
-          <button
-            key={f.slug}
-            onClick={() => {
-              setActive(f.slug);
-              setExpanded(null);
-            }}
-            className={`font-mono-data text-xs px-4 py-2 border transition-colors ${
-              active === f.slug
-                ? "bg-red text-white border-red"
-                : "border-steel-light text-ink hover:border-red hover:text-red"
-            }`}
-          >
-            {f.name.toUpperCase()}
-          </button>
-        ))}
-        <span className="self-center font-mono-data text-xs text-steel ml-2">
-          {filtered.length} proyecto{filtered.length !== 1 && "s"}
-        </span>
-      </div>
 
       {/* Timeline */}
       <div className="relative">

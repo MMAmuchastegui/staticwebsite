@@ -36,11 +36,7 @@ export default function NuestroTrabajo() {
       <BusDivider />
 
       <section className="mx-auto max-w-6xl px-5 py-16">
-        <h2 className="text-3xl text-ink mb-2">Línea de tiempo de proyectos</h2>
-        <p className="text-steel text-[15px] normal-case mb-8 max-w-xl">
-          Filtrá por área y hacé click en cualquier proyecto para ver el
-          detalle técnico completo.
-        </p>
+        <h2 className="text-3xl text-ink mb-2">APLICACIONES</h2>
         <ProjectTimeline projects={projects} />
       </section>
     </>
