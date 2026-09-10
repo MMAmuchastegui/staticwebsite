@@ -56,7 +56,7 @@ export default async function ServiceDetail({
               href="/nuestro-trabajo"
               className="mt-6 inline-flex items-center gap-2 font-mono-data text-xs text-ink border border-steel-light px-4 py-2 hover:border-red hover:text-red transition-colors"
             >
-              {relatedCount} PROYECTOS EJECUTADOS EN ESTA ÁREA →
+              PROYECTOS EJECUTADOS EN ESTA ÁREA →
             </Link>
           )}
         </div>
